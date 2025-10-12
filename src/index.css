@@ -1,7 +1,20 @@
-:root,
-body,
-html {
-  margin: 0;
-  min-height: 100vh;
-  background-color: #2c2c2c;
+:root {
+  --bg-color: #d1d1d1;
+  --text-color: #111;
+  --button-bg: #333fff;
+  --button-text: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+[data-theme='dark'] {
+  --bg-color: #111;
+  --text-color: #f1f1f1;
+  --button-text: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
