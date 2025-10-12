@@ -19,12 +19,11 @@ export default function Button({
   size = 'md',
   variant = 'contained',
   type = 'button',
-  className = '',
   handleClick,
   children,
 }: ButtonProps) {
 
-  const buttonClass = `btn btn--${variant} btn--${size} ${className}`
+  const buttonClass = `btn btn--${variant} btn--${size}`
 
   return (
     <button

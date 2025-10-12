@@ -1,0 +1,66 @@
+[data-theme='light'] {
+  --input-bg: #ffffff;
+  --input-border: #ccc;
+  --input-border-hover: #1976d2;
+  --input-border-focus: #1565c0;
+  --input-text: #1a1a1a;
+  --input-error: #d32f2f;
+  --input-error-bg: #fdecea;
+}
+
+[data-theme='dark'] {
+  --input-bg: #121212;
+  --input-border: #444;
+  --input-border-hover: #90caf9;
+  --input-border-focus: #64b5f6;
+  --input-text: #e0e0e0;
+  --input-error: #ef9a9a;
+  --input-error-bg: #2b0b0b;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  width: 100%;
+}
+
+.input-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--input-text);
+}
+
+.input-required {
+  color: var(--input-error);
+}
+
+.input-field {
+  padding: .6em;
+  font-size: 1rem;
+  border: 1px solid var(--input-border);
+  border-radius: .45rem;
+  outline: none;
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  transition: all .2s;
+}
+
+.input-field:hover {
+  border-color: var(--input-border-hover);
+}
+
+.input-field:focus {
+  border-color: var(--input-border-focus);
+}
+
+.input-field--error {
+  border-color: var(--input-error);
+  background-color: var(--input-error-bg);
+}
+
+.input-error {
+  font-size: .9rem;
+  color: var(--input-error);
+  margin-top: .1rem;
+}
