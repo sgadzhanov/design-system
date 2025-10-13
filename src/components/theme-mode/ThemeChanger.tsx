@@ -7,7 +7,7 @@ export default function ThemeChanger() {
 
   return (
     <div className={styles.container}>
-      <h1 style={{ margin: 0, padding: 0 }}>{theme === 'dark' ? '🌙' : '☀️'}</h1>
+      <h1>{theme === 'dark' ? '🌙' : '☀️'}</h1>
       <button
         onClick={toggleTheme}
         className={styles.themeButton}

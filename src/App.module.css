@@ -1,3 +1,11 @@
-.page {
-  /* background-color: #111; */
+.cases {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-top: 2rem;
+}
+
+.case {
+  display: flex;
+  gap: .5rem;
 }

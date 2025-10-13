@@ -11,12 +11,8 @@ function App() {
   return (
     <main className={styles.page}>
       <ThemeChanger />
-      <div
-        style={{ display: 'flex', flexDirection: 'column', gap: '.5rem', marginTop: '2rem' }}
-      >
-        <div
-          style={{ display: 'flex', gap: '.5rem' }}
-        >
+      <div className={styles.cases}>
+        <div className={styles.case}>
           <Button variant="text" size="sm">Text</Button>
           <Button variant="contained" size="md">Contained</Button>
           <Button variant="contained" size="md" isDisabled={true}>Contained</Button>
@@ -24,7 +20,8 @@ function App() {
           <Button variant="outlined" size="lg" isLoading={true}>Outlined</Button>
         </div>
         <div
-          style={{ display: 'flex', flexDirection: 'column', gap: '.5rem' }}
+          className={styles.case}
+          style={{ flexDirection: 'column' }}
         >
           <EmailInput />
           <PasswordInput />

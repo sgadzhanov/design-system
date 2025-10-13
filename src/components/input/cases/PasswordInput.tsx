@@ -6,12 +6,12 @@ export default function PasswordInput() {
 
   return (
     <Input
-      id="password"
-      label="Password"
-      type="password"
+      id='password'
+      label='Password'
+      type='password'
       value={password}
       handleChange={(e) => setPassword(e.target.value)}
-      placeholder="••••••••"
+      placeholder='••••••••'
       required
     />
   )
